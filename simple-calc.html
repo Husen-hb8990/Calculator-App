@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="simple-calc.css">
+</head>
+<title>HB-calc</title>
+<body>
+<div id="main">
+	<div class="cal">
+		<input id="input1" type="text" maxlength="10" 	value="0" readonly/><br><br><br><br>
+		
+	</div>
+	<input type="button" id="d" value="Del &larr;" onclick="kick('del')"/>
+	<input type="button"  id="c" value="Clear &#10006;" onclick="kick('C')"/><br><br>
+
+<div>
+	  <input type="button"  value="7" onclick="kick('7')"/>
+      <input type="button" value="8" onclick="kick('8')"/>
+      <input type="button" value="9" onclick="kick('9')"/>
+      <input type="button" value="+" onclick="kick('+')"/><br><br>
+      <input type="button" value="4" onclick="kick('4')"/>
+      <input type="button" value="5" onclick="kick('5')"/>
+      <input type="button" value="6" onclick="kick('6')"/>
+      <input type="button" value="-" onclick="kick('-')"/><br><br>
+      <input type="button" value="1" onclick="kick('1')"/>
+      <input type="button" value="2" onclick="kick('2')"/>
+      <input type="button" value="3" onclick="kick('3')"/>
+      <input type="button" value="&times;" onclick="kick('*')"/><br><br>
+      <input type="button" value="0" onclick="kick('0')"/>
+      <input type="button"  id="equal" value="=" onclick="kick('=')"/>
+      <input type="button" value="/" onclick="kick('/')"/><br><br>
+      
+</div>
+</div>
+
+<script src="simple-calc.js"></script>
